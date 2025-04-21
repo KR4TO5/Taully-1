@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:taully/pages/limpieza_page.dart';
 import 'pages/abarrotes_page.dart';
 import 'pages/Golosinas_page.dart'; 
 import 'pages/ricocan_page.dart'; 
@@ -37,7 +38,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3, 
+      length: 4 , 
       child: Scaffold(
         appBar: AppBar(
           title: const Text('Minimarket Taully'),
@@ -45,6 +46,7 @@ class HomePage extends StatelessWidget {
             tabs: [
               Tab(text: 'Abarrotes'),
               Tab(text: 'Golosinas'),
+              Tab(text: 'Prod.Limpieza'),
               Tab(text: 'Ricocan'), // 
             ],
           ),
@@ -54,10 +56,12 @@ class HomePage extends StatelessWidget {
           children: [
             AbarrotesPage(),
             GolosinasPage(),
-        RicocanPage(), // 
+            LimpiezaPage(),
+             RicocanPage(), // 
           ],
         ),
       ),
     );
   }
 }
+
