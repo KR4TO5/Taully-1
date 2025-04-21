@@ -36,7 +36,7 @@ class PantallaBienvenida extends StatelessWidget {
                 Navigator.of(context).pushReplacementNamed('/home');
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 145, 124, 240),
+                backgroundColor: const Color.fromARGB(255, 155, 127, 255),
                 padding: const EdgeInsets.symmetric(
                   horizontal: 40,
                   vertical: 15,
