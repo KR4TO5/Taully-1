@@ -11,7 +11,7 @@ class RicocanPage extends StatelessWidget {
       products: const [
         {
           'name': 'Ricocan Adulto Carne y Cereales 15kg',
-          'price': 95.00,
+          'price': 94.00,
           'image':
               'https://www.agrocampo.pe/30616-large_default/alimento-para-perro-ricocan-carne-y-cereales-15kg.jpg',
         },
