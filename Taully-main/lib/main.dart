@@ -4,6 +4,8 @@ import 'package:taully/pages/limpieza_page.dart';
 import 'pages/abarrotes_page.dart';
 import 'pages/Golosinas_page.dart'; 
 import 'pages/ricocan_page.dart'; 
+import 'package:taully/pages/pantalla_Bienvenida.dart';
+import 'package:taully/pages/pantalla_Finaliza.dart';
 
 import 'cart.dart';
 
@@ -26,7 +28,13 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const HomePage(),
+      initialRoute: '/Bienvenida',  // Con /
+        routes: {
+        '/Bienvenida': (context) => PantallaBienvenida(),  // Sin /
+        '/home': (context) => const HomePage(), 
+        '/Finaliza': (context) => PantallaFinaliza(),
+      },
+      //home: const HomePage(),
       debugShowCheckedModeBanner: false,
     );
   }
